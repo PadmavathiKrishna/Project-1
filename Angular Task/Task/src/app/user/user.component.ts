@@ -5,6 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent {
 
+/* Data Binding*/
+
+export class UserComponent {
+        term = 1;
+
+        increaseTerm() {
+          this.term++;
+        }
+        
 }
+

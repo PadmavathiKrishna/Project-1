@@ -4,13 +4,14 @@ import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-
+/* Lazy Loading */
 {
     path: 'admin',
     loadChildren: () => import('./admin/admin.module')
     .then(m => m.AdminModule)
   }
 ];
+/* Normal routing */
   /*{
     component:LoginComponent,
     path:" "
